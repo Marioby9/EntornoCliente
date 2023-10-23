@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Práctica Fichero</title>
+</head>
+<body class="center">
+    <main>
+        <header class="center">
+            <h1>Práctica Drag and Drop con ficheros</h1>
+            <h3> <span>Enunciado:</span> Creamos dos columnas (igual que en los ejercicios de Clase1,Clase2 y Clase3) en la primera columna se mostrarán los datos cargados de un fichero similar a MOCKDATA.json y en la segunda se mostrarán los datos de la primera que se vayan añadiendo utilizando Drag and Drop.</h3>
+        </header>
+
+        
+        <form id="form" class="center">
+            <h2>Formulario:</h2>
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="cities">
+                <option value="Madrid">Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Valencia">Valencia</option>
+            </select>
+            <input type="submit" value="seleccionar">
+        </form>
+        
+        <div class="lists center">
+            <div class="selectedCont">
+                <h3 class="listTitle">Seleccionados</h3>
+                <ul id="selectedList"></ul>
+            </div>
+            <div class="confirmedCont">
+                <h3 class="listTitle">Confirmados</h3>
+                <ul id="confirmedList"></ul>
+            </div>
+        </div>
+
+        <footer class="center">
+            <p>© Mario Martín Godoy 2023</p>
+            <div class="socialMedia">
+                <a class="btnRed center" href="https://marioby9.github.io/EntornoCliente/" target="_blank">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>Entorno Cliente</p>
+                </a>
+                <a class="btnRed center" href="https://github.com/Marioby9" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Marioby9</p>
+                </a>
+            </div>
+            
+        </footer>
+        
+    </main>
+    <img class="overlayImg" src="./img/jsOverlay.jpg" alt="background">
+    <div class="overlay"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
