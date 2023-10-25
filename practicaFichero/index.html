@@ -14,21 +14,25 @@
             <h3> <span>Enunciado:</span> Creamos dos columnas (igual que en los ejercicios de Clase1,Clase2 y Clase3) en la primera columna se mostrarán los datos cargados de un fichero similar a MOCKDATA.json y en la segunda se mostrarán los datos de la primera que se vayan añadiendo utilizando Drag and Drop.</h3>
         </header>
 
+        <div class="formAndFile center">
+            <form id="form" class="center">
+                <h2>Formulario:</h2>
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="city" id="city" placeholder="Ciudad" required>
+                <div class="formButtons">
+                    <input type="submit" value="Aceptar">
+                    <input type="button" id="bCancel" value="Cancelar">
+                </div>
+                
+            </form>
+            <button id="showConfirmed">Mostrar Confirmados</button>
+            <input type="file" id="fichero">
+            <p id="fileError">Error. El fichero no es de un formato correcto</p>
+        </div>
         
-        <form id="form" class="center">
-            <h2>Formulario:</h2>
-            <input type="text" id="name" placeholder="Nombre" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <select id="cities">
-                <option value="Madrid">Madrid</option>
-                <option value="Barcelona">Barcelona</option>
-                <option value="Sevilla">Sevilla</option>
-                <option value="Valencia">Valencia</option>
-            </select>
-            <input type="submit" value="seleccionar">
-        </form>
         
-        <div class="lists center">
+        <div class="lists">
             <div class="selectedCont">
                 <h3 class="listTitle">Seleccionados</h3>
                 <ul id="selectedList"></ul>
@@ -55,7 +59,7 @@
         </footer>
         
     </main>
-    <img class="overlayImg" src="./img/jsOverlay.jpg" alt="background">
+    <img class="overlayImg" src="../img/jsOverlay.jpg" alt="background">
     <div class="overlay"></div>
 
     <script src="./script.js"></script>

@@ -1,3 +1,6 @@
+const $textProvincia = document.getElementById("provincia")
+const $textLocalidad = document.getElementById("localidad")
+
 const $selectProvincias = document.getElementById("provincias")
 const $selectLocalities = document.getElementById("localidades")
 
@@ -7,8 +10,9 @@ const objectList = listString.split(";").map(elm => JSON.parse(elm))
 let provinceList = []
 
 
-//
 
+
+//
 
 objectList.forEach(elm => {
     if(!provinceList.find(prov => prov == elm.provincia)){ //SI NO LO ENCUENTRA, LO METO EN LA LISTA Y EN EL SELECT
@@ -22,10 +26,14 @@ objectList.forEach(elm => {
 })
 
 
-
 $selectProvincias.addEventListener("change", () => {
     $selectLocalities.innerHTML = ""
     changeLocalities()  
+    changeTitles()
+})
+
+$selectLocalities.addEventListener("change", () => { 
+    changeTitles()
 })
 
 
@@ -41,4 +49,11 @@ const changeLocalities = () => {
               })  
 }
 
+
+const changeTitles = () => {
+    $textProvincia.textContent = $selectProvincias.value
+    $textLocalidad.textContent = $selectLocalities.value
+}
+
 changeLocalities()
+changeTitles()

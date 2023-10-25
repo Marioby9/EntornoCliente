@@ -1,0 +1,30 @@
+.listCont{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 40px;
+    background-color: aqua;
+}
+ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+li{
+    width: 100%;
+}
+
+.container{
+    min-width: 90%;
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
