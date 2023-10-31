@@ -59,6 +59,16 @@
       "provincia": "A Coruña",
       "localidad": "Sanxenxo",
       "id": 12
+    },
+    {
+      "localidad": "Barakaldo",
+      "provincia": "Bilbao",
+      "id": 13
+    },
+    {
+      "localidad": "Galdakao",
+      "provincia": "Bilbao",
+      "id": 14
     }
   ]
 }

@@ -1,14 +1,6 @@
+
 export const BASEURL="http://localhost:3000"
 
-             
-export const guardarDatos = async(url,tabla, dato) => {
-    try{
-        await axios.post(`${BASEURL}/${tabla}`, dato);
-
-    }catch(e){
-        console.log(e);
-    }      
-}
 
 export const obtenerDatos = async(url, tabla, campo, valor) => {
     try {
@@ -28,10 +20,18 @@ export const obtenerDatosFetch = async (url, tabla, campo, valor) => {
     } catch (error) {
         console.log(error.message)
     }
-    
-    
 }
 
+export const addLocalitie = async (localidad, provincia) => {
+    try {
+        await axios.post(`${BASEURL}/localidades`, {
+            localidad: localidad,
+            provincia: provincia
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 
 

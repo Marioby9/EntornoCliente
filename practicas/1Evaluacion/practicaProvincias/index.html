@@ -9,7 +9,6 @@
 </head>
 <body>
     <main>
-        <button id="btnStartServer">Lanzar JsonServer</button>
         <div class="data">
             <h1>Provincia Actual: <span id="provincia"></span></h1>
             <h1>Localidad Actual: <span id="localidad"></span></h1>
@@ -19,18 +18,20 @@
         
         <label for="localidades">Localidades:</label>
         <select id="localidades"></select>
-        <script src="./script.js" type="module"></script>
-
+        
         <br><br>
-        <form>
+
+        <form id="form">
             <h3>Formulario añade localidad</h3>
             <label>Localidad</label>
-            <input type="text" ><br>
+            <input type="text" id="inptLocalidad" required><br>
             <label>Provincia</label>
-            <input type="text" >
+            <input type="text" id="inptProvincia" required><br><br>
+            <input type="submit" value="enviar">
         </form>
 
     </main>
     
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
