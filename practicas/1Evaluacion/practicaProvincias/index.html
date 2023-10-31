@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Práctica Provincias</title>
 </head>
 <body>
     <main>
+        <button id="btnStartServer">Lanzar JsonServer</button>
         <div class="data">
             <h1>Provincia Actual: <span id="provincia"></span></h1>
             <h1>Localidad Actual: <span id="localidad"></span></h1>
@@ -17,7 +19,17 @@
         
         <label for="localidades">Localidades:</label>
         <select id="localidades"></select>
-        <script src="./script.js"></script>
+        <script src="./script.js" type="module"></script>
+
+        <br><br>
+        <form>
+            <h3>Formulario añade localidad</h3>
+            <label>Localidad</label>
+            <input type="text" ><br>
+            <label>Provincia</label>
+            <input type="text" >
+        </form>
+
     </main>
     
 </body>

@@ -1,0 +1,64 @@
+{
+  "localidades": [
+    {
+      "localidad": "Getafe",
+      "provincia": "Madrid",
+      "id": 1
+    },
+    {
+      "provincia": "Madrid",
+      "localidad": "Mostoles",
+      "id": 2
+    },
+    {
+      "provincia": "Madrid",
+      "localidad": "Fuenlabrada",
+      "id": 3
+    },
+    {
+      "provincia": "Madrid",
+      "localidad": "Pinto",
+      "id": 4
+    },
+    {
+      "provincia": "Madrid",
+      "localidad": "San Sebastian de los Reyes",
+      "id": 5
+    },
+    {
+      "provincia": "Barcelona",
+      "localidad": "Badalona",
+      "id": 6
+    },
+    {
+      "provincia": "Barcelona",
+      "localidad": "Payes",
+      "id": 7
+    },
+    {
+      "provincia": "Barcelona",
+      "localidad": "Hospitalet",
+      "id": 8
+    },
+    {
+      "provincia": "Sevilla",
+      "localidad": "Santa Justa",
+      "id": 9
+    },
+    {
+      "provincia": "Sevilla",
+      "localidad": "Camas",
+      "id": 10
+    },
+    {
+      "provincia": "A Coruña",
+      "localidad": "Santiago de Compostela",
+      "id": 11
+    },
+    {
+      "provincia": "A Coruña",
+      "localidad": "Sanxenxo",
+      "id": 12
+    }
+  ]
+}
