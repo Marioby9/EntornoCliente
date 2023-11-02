@@ -7,6 +7,8 @@ const $txtFileError = document.getElementById("fileError")
 const $bAccept = document.getElementById("bAccept")
 const $bCancel = document.getElementById("bCancel")
 
+const BASEURL="http://localhost:3000"
+
 //
 
 let elementsList = []
@@ -161,7 +163,20 @@ fichero.addEventListener('change',(e)=> uploadFile(e))
 
 $bCancel.addEventListener("click", () => cancel())
 
-$bShowConfirmed.addEventListener("click", () => elementsList.filter(elm => elm.isConfirmed).forEach(elm => console.log(elm)))
+
+//NO AÑADIMOS EL ELEMENTO ÍNTEGRO PORQUE NOS INTERESA QUE LA ID SEA LA DEL AUTOINCREMENT
+$bShowConfirmed.addEventListener("click", () => elementsList.filter(elm => elm.isConfirmed).forEach(elm => {
+    axios.post(`${BASEURL}/confirmados`, { 
+        name: elm.name,
+        email: elm.email,
+        city: elm.city,
+        isConfirmed: elm.isConfirmed
+    })
+    .then(()=> console.log("Elemento añadido"))
+    .catch(error => console.log(error))
+
+    $confirmedList.innerHTML = ""
+}))
 
 document.addEventListener("dragstart", (event) => idDragedElement = event.target.id)
 

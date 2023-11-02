@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>PokeAPI/buscador</title>
+</head>
+<body>
+    <header class="center">
+        <div class="appHeader">
+            <div class="left">
+                <p class="fetch">fetching from: https://pokeapi.co/api/v2/pokemon</p>
+                <p class="title"><span class="light">Buscador de </span><span class="pokeTitle">pokemons</span> <span class="apiTitle">desde API</span></p>
+                <nav>
+                    <ul>
+                        <li id="menu1"><a href="#">Buscador</a></li>
+                        <li id="menu2"><a href="./allPokemons.html">Ver todos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <img class="logo" src="./img/pokemonLogo.png" alt="">
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="searcher">
+                <h2>Introduce el nombre de tu pokemon:</h2>
+                <div class="field">
+                    <input type="text" id="inputSearch" placeholder="Ejemplo: Bulbasaur">
+                    <i class="fa-solid fa-magnifying-glass searchButton" id="btnSearch""></i>
+                </div>
+            </div>
+            <div class="pokeDataCont">
+                <div class="pokeData">
+                    <div class="pokemon">
+                        
+                    </div>
+
+                    <div class="noDataFound">
+                        <h2>Debes introducir un pokemon real</h2>
+                        <h4>Tienes 1292 para elegir...</h4>
+                        <img src="./img/snorlax.gif" alt="no data">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="center">
+        <p>© Mario Martín Godoy 2023</p>
+        <div class="socialMedia">
+            <a class="btnRed center" href="https://marioby9.github.io/EntornoCliente/" target="_blank">
+                <i class="fa-brands fa-square-js"></i>
+                <p>Entorno Cliente</p>
+            </a>
+            <a class="btnRed center" href="https://github.com/Marioby9" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <p>Marioby9</p>
+            </a>
+        </div>
+        
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
