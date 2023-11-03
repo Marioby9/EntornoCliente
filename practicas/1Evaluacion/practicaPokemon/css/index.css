@@ -296,32 +296,3 @@ footer{
     transform: scale(1.05);
 }
 
-
-
-
-
-/*OVERLAY
-.overlay {
-    position: fixed; 
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #191414;
-    opacity: 0.9; 
-    z-index: -1;
-}
-
-.overlayImg {
-    filter: grayscale(30%);
-    
-    position: fixed; 
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: right;
-    background-size: cover;
-    z-index: -2; 
-}
-*/

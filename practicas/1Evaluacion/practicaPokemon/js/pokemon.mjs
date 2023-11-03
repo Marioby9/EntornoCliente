@@ -35,3 +35,13 @@ export const getPokemonData = async (url) => {
   }
 }
 
+
+
+export const getLimitedPokemons = async (limit) => {
+  try { 
+    const response = await axios.get(`${BASEURL}?limit=${limit}`)
+    return response.data.results
+  } catch (error) {
+    console.log(error)
+  }
+}
