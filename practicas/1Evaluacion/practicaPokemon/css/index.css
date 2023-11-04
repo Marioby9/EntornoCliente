@@ -296,3 +296,74 @@ footer{
     transform: scale(1.05);
 }
 
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        height: auto;
+        min-height: 150px;
+    }
+    .title{
+        font-size: xx-large;
+    }
+
+    header img {
+        height: 80px; 
+        display: none;
+    }
+    
+    .appHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+    nav ul {
+        gap: 10px; 
+    }
+    .container{
+        flex-direction: column;
+    }
+    .searcher{
+        width: 90%;
+        margin-left:10px ;
+    }
+    .field {
+        width: 90%; 
+    }
+
+    .field input {
+        width: 100%; 
+    }
+
+    .pokeDataCont, .pokeData {
+        width: 99%;
+        margin-left: 2px;
+        height: 330px;
+    }
+
+    .pokemon, .noDataFound {
+        width: 100%; 
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .socialMedia {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btnRed {
+        width: 100%; 
+    }
+}
