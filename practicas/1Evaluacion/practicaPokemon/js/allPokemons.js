@@ -1,4 +1,4 @@
-import {getPokemonData, getLimitedPokemons } from "./pokemon.mjs"
+import {getPokemonData, getLimitedPokemons } from "./pokemon.js"
 
 
 

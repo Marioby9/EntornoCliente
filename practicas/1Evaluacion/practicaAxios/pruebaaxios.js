@@ -1,4 +1,4 @@
-import { guardarDatos, BASEURL, obtenerDatos } from "./crudAxios.js";
+import { guardarDatos, BASEURL, obtenerDatos, guardarDatosFetch, obtenerDatosFetch } from "./crudAxios.js";
 const botonGuarda = document.getElementById('boton')
 const botonObten = document.getElementById('boton2')
 const nombre = document.getElementById('nombre')
@@ -38,9 +38,9 @@ anadeTabla.addEventListener("click",()=> {
     console.log(tabla)
                                        
                                         })
-botonGuarda.addEventListener("click",() => tabla.forEach(el => guardarDatos(BASEURL, 'conceptos', el)));
+botonGuarda.addEventListener("click",() => tabla.forEach(el => guardarDatosFetch('conceptos', el)));
 botonObten.addEventListener("click",async() => {
-    const resultado = await obtenerDatos(BASEURL,'conceptos','nombre', nombre.value);
+    const resultado = await obtenerDatosFetch('conceptos','nombre', nombre.value);
     $list.innerHTML = ""
     resultado.forEach(elm => paintElement(elm))
 });

@@ -1,4 +1,4 @@
-import { getUrlbyName, getPokemonData } from "./pokemon.mjs";
+import { getUrlbyName, getPokemonData } from "./pokemon.js";
 
 //
 
